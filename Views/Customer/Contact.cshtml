@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CRUDMVCWEB.Models.CustomerContactViewModel
+
+
+<form method="post">
+
+<h1>Contact Us</h1>
+
+<div class="mt-3">
+    <label class="form-label">Name </label>
+    <input type="text" class="form-control" value="" asp-for="CusName" />
+</div>
+<div class="mt-3">
+    <label class="form-label">Email </label>
+    <input type="email" class="form-control" value="" asp-for="CusEmail"/>
+</div>
+<div class="mt-3">
+    <label class="form-label">Phone </label>
+    <input type="tel" class="form-control" value="" asp-for="CusPhone" />
+</div>
+<div class="mt-3">
+    <label class="form-label">Message </label>
+    <input type="text" class="form-control" value="" asp-for="CusMessage"/>
+</div>
+
+<div class="mt-3">
+    <input type="checkbox" class="form-check-input" id="Agree" asp-for="CusAgree"/>
+    <label class="form-check-label" for="CusAgree">Agree </label>
+</div>
+
+<div class="mt-3">
+    <button type="submit" class="btn btn-primary">Contact</button>
+</div>
+
+</form>
